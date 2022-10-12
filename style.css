@@ -1,6 +1,14 @@
-.topnav{
-    display: flex;
-    justify-content: space-between;
-    
+.topBtn{
+    display: inline-block;
+        background-color: #f9f8fb;
+        border-radius: 10px;
+        border: 4px double #cccccc;
+        color: #eeeeee;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
 }
-
