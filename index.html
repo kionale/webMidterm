@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our video game website</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
 </head>
 
 <body>
@@ -24,7 +25,14 @@
                 <li><a href="/catalogue.html">CATALOGUE</a></li>
                 <li><a href="/about_us.html">ABOUT US</a></li>
             </ul>
-            <input type="text" placeholder="Search..">
+            <div class="action">
+
+                <div classs="searchBox">
+                    <a href="#"><i class='bx bx-search'></i></a>
+                    <input type="text" placeholder="Search Games">
+                </div>
+            </div>
+
             <div class="topButton">
                 <button class="topBtn signup">
                     <sapn>SIGN UP</sapn>
@@ -34,22 +42,31 @@
         </header>
     </div>
 
+    <!-- content starts here -->
     <div class="body">
         <!--Go wild Navid. It's your show time-->
         <div class="annimation">
             <img class="display" src="/images/Westworld.png" loading="lazy" alt="">
 
         </div>
+        <!-- annimation section ends here -->
 
         <!--display of different games at the bottom-->
+
         <div class="salePreviewTitle">Feature games</div>
         <div class="salePreviewWidgets">
-            <img class="salepreviewwidgets_GT_image" src="/images/Gran Turismo.png" loading="lazy" width="460"
-                height="215" alt="Gran Toriso">
-            <img class="salepreviewwidgets__BI_image" src="/images/Bioshock Infinite.png" loading="lazy" width="460"
-                height="215" alt="Bioshock Infinite">
-            <img class="salepreviewwidgets_FND_image" src="/images/Farcry New Dawn.png" loading="lazy" width="460"
-                height="215" alt="Farcry New Dawn">
+            <div class="salePreviewImg">
+
+            </div>
+            <a href="https://www.gran-turismo.com/us/">
+                <div class="salePreviewImg img-GT"></div>
+            </a>
+            <img class="salePreviewImg-GT" src="/images/Gran Turismo.png" loading="lazy" width="460" height="215"
+                alt="Gran Toriso">
+            <img class="salePreviewImg-BI" src="/images/Bioshock Infinite.png" loading="lazy" width="460" height="215"
+                alt="Bioshock Infinite">
+            <img class="salePreviewImg-FND" src="/images/Farcry New Dawn.png" loading="lazy" width="460" height="215"
+                alt="Farcry New Dawn">
         </div>
 
     </div>
