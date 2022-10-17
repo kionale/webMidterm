@@ -143,7 +143,13 @@ ul.navBar li a:hover:not(.active){
     background-size: cover;
   }
 
-  .salePreviewTitle{
+  .games{
+    padding:0px;
+    width:100%;
+
+  }
+
+  .games .salePreviewTitle{
     padding-top: 20px;
     background-color: #fffef4;
     font-size: 30px;
@@ -151,16 +157,49 @@ ul.navBar li a:hover:not(.active){
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     height:50px;
     line-height: 16px;
-    align-items: center;
-    justify-content: center;
+    justify-content: left;
 
   
   }
-  .salePreviewWidgets{
+  .games .salePreview{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: inter -400;
-    gap:35px;
+    padding-left: 2%;
+    padding-right: 2%;
+    
 
   }
+
+  .games .salePrevie .content{
+    width:280pz;
+    border-radius: 10px;
+    margin:20px 40px;
+    background:#dbd9b9;
+  }
+
+   .games .salePrevie .content img{
+    width:100%;
+    height:250px;
+    object-fit: cover;
+    
+
+   }
+  /* About us page */
+  .about .contentBx{
+    width:50%;
+    margin:20%;
+
+  }
+
+.about .contentBx h2{
+    font-size:3em;
+    font-weight: 700;
+    color:#fff;
+}
+
+.about .contentBx p{
+    max-width: 600px;
+    text-align: justify;
+    color:#dbd9b9;
+}
