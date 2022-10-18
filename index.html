@@ -6,21 +6,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our video game website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
+    </style>
 </head>
 
 <body>
 
-    <div class="topnav">
-        <a href="#store">Store</a>
-        <a href="#catagories">Catagories</a>
-        <a href="#Download">Download</a>
-        <a href="#community">Community</a>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <!-- display in italic-->
+                <i class="topLogo"></i>
+                <!-- <p>Game</p> -->
+                <img width="90" height="50" src="/images/Logo.svg" alt="logo of the website">
+            </div>
+            <ul class="navBar">
+                <li><a href="#" class="active">STORE</a></li>
+                <li><a href="/catalogue.html">CATALOGUE</a></li>
+                <li><a href="/about_us.html">ABOUT US</a></li>
+            </ul>
+            <div class="action">
 
+                <div class="searchBox">
+                    <a href="#"><i class='bx bx-search'></i></a>
+                    <input type=text placeholder="search">
+                </div>
+            </div>
 
-        <button class="topBtn signup"></button>
+            <div class="topButton">
+                <button class="topBtnSignup">
+                    <sapn>SIGN UP</sapn>
+                </button>
+                <button class="topBtnLogin"><span>LOG IN</span></button>
+            </div>
+        </header>
     </div>
 
-    <div class="body"></div>
+    <!-- contant starts here -->
+    <div class="temp">
+        <!--Go wild Navid. It's your show time-->
+        <div class="annimation">
+            <img class="display" src="/images/westworld.png" loading="lazy" alt="">
+
+        </div>
+        <!-- annimation section ends here -->
+
+        <!--display of different games at the bottom-->
+        <div class="games">
+            <div class="salePreviewTitle">Feature games</div>
+            <div class="salePreview">
+                <!-- <div class="content"> 
+                    <h4>Gran Toriso</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="game-info">
+                        <p>Pricing<br><span>$89.95</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+ -->
+
+                <div class="GranToriso_img">
+                    <a href="https://www.gran-turismo.com/us/">
+                        <img src="/images/Gran Turismo.png" loading="lazy" width="460" height="215"
+                            alt="Gran Toriso image">
+                    </a>
+                </div>
+                <div class="sale GranToriso-content">
+                    <h2>Gran Toriso</h2>
+                    <div class="GranToriso-body">CAN $89.99</div>
+                </div>
+
+                <div class="BioshockInfinite_img">
+                    <a href="https://2k.com/en-US/game/bioshock-infinite/">
+                        <img src="/images/Bioshock Infinite.png" loading="lazy" width="460" height="215"
+                            alt="Bioshock Infinite">
+                    </a>
+                </div>
+                <div class="sale BioshockInfinite-content">
+                    <h2>Bioshock Infinite</h2>
+                    <div class="GranToriso-body">CAN $59.99</div>
+                </div>
+
+                <div class="FarcryNewDawn_img">
+                    <a href="https://www.ubisoft.com/en-ca/game/far-cry/new-dawn">
+                        <img src="/images/Farcry New Dawn.png" loading="lazy" width="460" height="215"
+                            alt="Farcry New Dawn">
+                </div>
+                <div class="sale FarcryNewDawn-content">
+                    <h2>Farcry New Dawn</h2>
+                    <div class="FarcryNewDawn_body">CAN $79.99</div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    </div>
 
 </body>
 
