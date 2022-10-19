@@ -7,7 +7,7 @@ html {
 
 .container{
     width: 100%;
-    height: 10%;
+    height: 13%;
     display: flex;
     align-items: center;
     background-color:#2F2F2F;
@@ -28,7 +28,7 @@ header{
     color:beige;
     display:flex;
     margin-left: 40px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .logo p{
@@ -45,8 +45,6 @@ ul.navBar {
     justify-content: center;
 }
 
-
-
 /* Style the links inside the navigation bar */
 ul.navBar li a {
     float: left;
@@ -57,11 +55,10 @@ ul.navBar li a {
     font-family: 'Jura', sans-serif;
     color: #D0D0D0;
     font-size: 16px;
-    font-weight:600;
+    font-weight: 600;
     align-items: center;
     justify-content: center;
 }
-
 
 /* Change the color of links on hover */
 ul.navBar li a.active{
@@ -73,7 +70,6 @@ ul.navBar li a:hover:not(.active){
     color:#EAEAEA;
     scale: 105%;
 }
-
 
 .active .searchBox {
     border-style: solid;
@@ -164,7 +160,6 @@ ul.navBar li a:hover:not(.active){
 
 /* header ends here*/
 
- 
 .display{
     width:100%;
     height: 400px;
@@ -175,12 +170,14 @@ h2 {
     font-family: 'Jura', sans-serif;
 }
 
-.games{
+.featureGames{
+    position: absolute;
+    top: 88%;
     padding:0px;
     width:100%;
 }
 
-.games .salePreviewTitle{
+.featureGames .salePreviewTitle{
     font-size: 24px;
     font-weight: 600;
     font-family: 'Jura', sans-serif;
@@ -192,7 +189,7 @@ h2 {
 }
 
 
-.games .salePreview{
+.featureGames .salePreview{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -202,14 +199,14 @@ h2 {
 
 }
 
-.games .salePrevie .content{
+.featureGames .salePrevie .content{
     width:280pz;
     border-radius: 10px;
     margin:20px 40px;
     background:#dbd9b9;
 }
 
-.games .salePrevie .content img{
+.featureGames .salePrevie .content img{
     width:100%;
     height:250px;
     object-fit: cover;
@@ -245,4 +242,188 @@ h2 {
 
 .FarcryNewDawn_body {
     font-family: 'Jura', sans-serif;
+}
+
+/* main slider style */
+
+.mainSlider {
+    overflow: hidden;
+    position: absolute;
+    left: 10%;
+    width: 90%;
+    perspective: 100px;
+}
+
+.mainImgCollection {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 650%;
+    margin: 0;
+    left: 0%;
+    animation: 40s mainScroll infinite;
+}
+
+.mainImg {
+    width: calc(100% / 8);
+    float: left;
+    object-fit: cover;
+}
+
+.mainSlider::before,
+.mainSlider::after {
+    background: linear-gradient(to right, rgba(29,29,29,1) 0%, rgba(255,255,255,0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 8%;
+    z-index: 2;
+}
+
+.mainSlider::before {
+    left: 0%;
+    top: 0%;
+}
+
+.mainSlider::after {
+    right: 18.65%;
+    top: 0%;
+    transform: rotateZ(180deg);
+}
+
+@keyframes mainScroll {
+    0% {
+        left: 0;
+    }
+    6% {
+        left: 0;
+    }
+    10% {
+        left: -81.3%;
+    }
+    20%{
+        left: -81.3%;
+    }
+    24% {
+        left: -162.6%;
+    }
+    34%{
+        left: -162.6%;
+    }
+    38% {
+        left: -243.9%;
+    }
+    48% {
+        left: -243.9%;
+    }
+    52% {
+        left: -325.2%;
+    }
+    62% {
+        left: -325.2%;
+    }
+    66% {
+        left: -406.5%;
+    }
+    76% {
+        left: -406.5%;
+    }
+    80% {
+        left: -487.8%;
+    }
+    90% {
+        left: -487.8%;
+    }
+    94% {
+        left: -569.1%;
+    }
+    100% {
+        left: -569.1%;
+    }
+}
+
+.excessImgCover {
+    background-color: #1d1d1d;
+    position: absolute;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+/* feature slider style */
+.featureSlider {
+    height: 100%;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    overflow: hidden;
+}
+
+.featureImgCollection {
+    display: flex;
+    width: calc(25% * 8);
+    animation: featureScroll 40s linear infinite;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+
+.featureImg {
+    width: 100%;
+}
+
+.featureSlider::before,
+.featureSlider::after {
+    background: linear-gradient(to right, rgba(29,29,29,1) 0%, rgba(255,255,255,0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 8%;
+    z-index: 2;
+}
+
+.featureSlider::before {
+    left: 0%;
+    top: 0%;
+}
+
+.featureSlider::after {
+    right: 0%;
+    top: 0%;
+    transform: rotateZ(180deg);
+}
+
+@keyframes featureScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-25% * 2));
+    }
+}
+
+/* feature game detail style */
+.featureGameDetails {
+    background-color: #EAEAEA;
+    width: 90%;
+    height: 18%;
+    margin: auto;
+    position: absolute;
+    bottom: 15px;
+}
+
+/* feature image hover effect */
+.fullFeatureImg {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+}
+
+.fullFeatureImg:hover {
+    transform: translateZ(20px);
 }
