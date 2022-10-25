@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
+
 body,
 html {
     height: 100%;
@@ -5,7 +7,7 @@ html {
     background-color: #1E1E1E;
 }
 
-.container{
+.navContainer{
     width: 100%;
     height: 13%;
     display: flex;
@@ -71,16 +73,19 @@ ul.navBar li a:hover:not(.active){
     scale: 105%;
 }
 
-.active .searchBox {
+.searchBox input {
     border-style: solid;
-    border: 2px;
+    background-color: #1E1E1E;
+    margin: 5px;
+    padding: 5px;
+    color: #D0D0D0;
     border-color: #D0D0D0;
     border-radius: 8px;
 }
 
 ::placeholder {
     font-family: 'Jura', sans-serif;
-    padding: 8px;
+    padding: 20px;
 }
 
 .topButton {
@@ -170,95 +175,47 @@ h2 {
     font-family: 'Jura', sans-serif;
 }
 
-.featureGames{
-    position: absolute;
-    top: 88%;
-    padding:0px;
-    width:100%;
-}
-
-.featureGames .salePreviewTitle{
-    font-size: 24px;
-    font-weight: 600;
+.gameName {
     font-family: 'Jura', sans-serif;
+    padding: 5px;
+    font-size: 16px;
     color: #EAEAEA;
-    height:50px;
-    padding-left: 40px;
-    padding-top: 40px;
-    padding-bottom: 24px;
 }
 
-
-.featureGames .salePreview{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 2%;
-    padding-right: 2%;
-    
-
-}
-
-.featureGames .salePrevie .content{
-    width:280pz;
-    border-radius: 10px;
-    margin:20px 40px;
-    background:#dbd9b9;
-}
-
-.featureGames .salePrevie .content img{
-    width:100%;
-    height:250px;
+img {
     object-fit: cover;
 }
 
-/* About us page */
-
-.about .contentBx{
-    width:50%;
-    margin:20%;
-
+.featureGames{
+    position: relative;
+    width:100%;
 }
 
-.about .contentBx h2{
-    font-size:3em;
-    font-weight: 700;
-    color:#fff;
-}
-
-.about .contentBx p{
-    max-width: 600px;
-    text-align: justify;
-    color:#dbd9b9;
-}
-
-.GranToriso-body {
+.salePreviewTitle{
+    background-color: #474747;
+    font-size: 24px;
+    font-weight: 900;
     font-family: 'Jura', sans-serif;
-}
-
-.GranToriso-body {
-    font-family: 'Jura', sans-serif;
-}
-
-.FarcryNewDawn_body {
-    font-family: 'Jura', sans-serif;
+    color: #EAEAEA;
+    padding: 20px;
 }
 
 /* main slider style */
 
 .mainSlider {
+    display: grid;
     overflow: hidden;
-    position: absolute;
-    left: 10%;
-    width: 90%;
-    perspective: 100px;
+    margin: 10px;
+    position: relative;
+    left: 15%;
+    width: 84%;
 }
 
 .mainImgCollection {
     position: relative;
     display: flex;
     align-items: center;
-    width: 650%;
+    width: calc(80% * 8);
     margin: 0;
     left: 0%;
     animation: 40s mainScroll infinite;
@@ -277,7 +234,7 @@ h2 {
     height: 100%;
     position: absolute;
     width: 8%;
-    z-index: 2;
+    z-index: 1;
 }
 
 .mainSlider::before {
@@ -286,68 +243,17 @@ h2 {
 }
 
 .mainSlider::after {
-    right: 18.65%;
+    right: 20%;
     top: 0%;
     transform: rotateZ(180deg);
 }
 
-@keyframes mainScroll {
-    0% {
-        left: 0;
-    }
-    6% {
-        left: 0;
-    }
-    10% {
-        left: -81.3%;
-    }
-    20%{
-        left: -81.3%;
-    }
-    24% {
-        left: -162.6%;
-    }
-    34%{
-        left: -162.6%;
-    }
-    38% {
-        left: -243.9%;
-    }
-    48% {
-        left: -243.9%;
-    }
-    52% {
-        left: -325.2%;
-    }
-    62% {
-        left: -325.2%;
-    }
-    66% {
-        left: -406.5%;
-    }
-    76% {
-        left: -406.5%;
-    }
-    80% {
-        left: -487.8%;
-    }
-    90% {
-        left: -487.8%;
-    }
-    94% {
-        left: -569.1%;
-    }
-    100% {
-        left: -569.1%;
-    }
-}
-
 .excessImgCover {
-    background-color: #1d1d1d;
-    position: absolute;
-    right: 0%;
-    width: 100%;
+    background-color: #1E1E1E;
+    width: 20%;
     height: 100%;
+    position: absolute;
+    right: 0;
 }
 
 /* feature slider style */
@@ -362,19 +268,21 @@ h2 {
 
 .featureImgCollection {
     display: flex;
-    width: calc(25% * 8);
+    width: calc(25% * 10);
     animation: featureScroll 40s linear infinite;
 }
 
 .slide {
     display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 15px;
     perspective: 100px;
 }
 
 .featureImg {
-    width: 100%;
+    width: 98%;
+    transition: transform 0.5s;
 }
 
 .featureSlider::before,
@@ -398,32 +306,68 @@ h2 {
     transform: rotateZ(180deg);
 }
 
-@keyframes featureScroll {
+/* feature image hover effect */
+
+.featureImg:hover {
+    transform: translateZ(10px);
+}
+
+@keyframes mainScroll {
     0% {
-        transform: translateX(0);
+        left: 0;
+    }
+    6% {
+        left: 0;
+    }
+    10% {
+        left: -80%;
+    }
+    20%{
+        left: -80%;
+    }
+    24% {
+        left: -160%;
+    }
+    34%{
+        left: -160%;
+    }
+    38% {
+        left: -240%;
+    }
+    48% {
+        left: -240%;
+    }
+    52% {
+        left: -320%;
+    }
+    62% {
+        left: -320%;
+    }
+    66% {
+        left: -400%;
+    }
+    76% {
+        left: -400%;
+    }
+    80% {
+        left: -480%;
+    }
+    90% {
+        left: -480%;
+    }
+    94% {
+        left: -560%;
     }
     100% {
-        transform: translateX(calc(-25% * 2));
+        left: -560%;
     }
 }
 
-/* feature game detail style */
-.featureGameDetails {
-    background-color: #EAEAEA;
-    width: 90%;
-    height: 18%;
-    margin: auto;
-    position: absolute;
-    bottom: 15px;
-}
-
-/* feature image hover effect */
-.fullFeatureImg {
-    width: 100%;
-    height: 100%;
-    transition: transform 0.5s;
-}
-
-.fullFeatureImg:hover {
-    transform: translateZ(20px);
-}
+    @keyframes featureScroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-40%);
+        }
+    }
