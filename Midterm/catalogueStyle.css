@@ -62,6 +62,8 @@ ul.navBar li a {
     justify-content: center;
 }
 
+/* Change the color of links on hover */
+/* not sure about how to create the underline I design on Figma D: */
 ul.navBar li a.active{
     color:#6fe4b7;
     
@@ -132,16 +134,39 @@ ul.navBar li a:hover:not(.active){
     background-color: #22857B;
 }
 
+.topButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.2s;
+
+}
+
+.topButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.2s;
+}
+ 
+.topButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
 
 .BtnSignup:hover {
-    background-color: #7f890b;
+    background-color: #4c9c7e;
 }
 
 .BtnLogin:hover{
-    background-color: #7f890b;
+    background-color: #4c9c7e;
 }
-
- 
 
 /* header ends here*/
 

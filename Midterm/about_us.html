@@ -44,26 +44,21 @@
 
     <div class="main-content">
         <div class="about-us-img">
-            <img width="650" heignt="650" src="images/about-us/img2.webp" alt="">
+            <img src="images/about-us/img2.webp" alt="">
         </div>
-
-
         <div class="contact">
             <img src="" alt="">
             <div class="form">
                 <h1>Contact Us</h1>
-
                 <form action="" method="post"></form>
                 <div class="inputBx">
-                    <p class="contact-text">Name</p>
-                    <input type="text" required placeholder="Full Name">
+                    <label class="contact-text" for="fullName">Name:</label>
+                    <input class="infoInput" id="fullName" type="text" required placeholder="Full Name">
+                    <label class="contact-text" for="email">Email:</label>
+                    <input class="infoInput" id="email" type="text" required placeholder="Email">
+                    <label class="contact-text" for="concern">Your Concern:</label>
+                    <input class="concernInput" id="concern" type="text" required placeholder="How can we help you?">
                 </div>
-                <div class="inputBx">
-                    <p class="contact-text">Email</p>
-                    <input type="text" required placeholder="Email">
-                </div>
-
-
                 <button class="sumbitBtn" type="submit">Submit</button>
             </div>
 

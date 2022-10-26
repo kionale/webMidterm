@@ -1,7 +1,4 @@
-
-*{
-    font-family: 'Jura', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
 
 body,
 html {
@@ -10,13 +7,6 @@ html {
     background-color: #1E1E1E;
 }
 
-*{
-    font-family: 'Jura', sans-serif;
-}
-
-p{
-    color: white;
-}
 .navContainer{
     width: 100%;
     height: 13%;
@@ -72,8 +62,11 @@ ul.navBar li a {
     justify-content: center;
 }
 
+/* Change the color of links on hover */
+/* not sure about how to create the underline I design on Figma D: */
 ul.navBar li a.active{
-    color:#6fe4b7;   
+    color:#6fe4b7;
+    
 }
 
 ul.navBar li a:hover:not(.active){
@@ -81,16 +74,19 @@ ul.navBar li a:hover:not(.active){
     scale: 105%;
 }
 
-.active .searchBox {
+.searchBox input {
     border-style: solid;
-    border: 2px;
+    background-color: #1E1E1E;
+    margin: 5px;
+    padding: 5px;
+    color: #D0D0D0;
     border-color: #D0D0D0;
     border-radius: 8px;
 }
 
 ::placeholder {
     font-family: 'Jura', sans-serif;
-    padding: 8px;
+    padding: 20px;
 }
 
 .topButton {
@@ -99,7 +95,7 @@ ul.navBar li a:hover:not(.active){
     display: flex;
 }
 
-.BtnSignup{
+.BtnSignup {
     border-radius: 8px;
     border-color: #D0D0D0;
     border-style: solid;
@@ -140,13 +136,42 @@ ul.navBar li a:hover:not(.active){
 
 
 
+.topButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.2s;
+
+}
+
+
+.topButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.2s;
+}
+ 
+.topButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+
 .BtnSignup:hover {
-    background-color: #7f890b;
+    background-color: #4c9c7e;
 }
 
 .BtnLogin:hover{
-    background-color: #7f890b;
+    background-color: #4c9c7e;
 }
+
 
 .btmButton{
   margin-top: 10%;
