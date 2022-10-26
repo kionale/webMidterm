@@ -25,22 +25,12 @@ header{
 
 .logo{
     position:relative;
-    text-align: center;
     width:200px;
-    color:beige;
-    display:flex;
     margin-left: 40px;
     margin-top: 5px;
 }
 
-.logo p{
-    width: 100px;
-    margin-left: 10px;
-    font-size:20px;
-    font-family: 'Jura', sans-serif;
-}
-
-ul.navBar {
+.navBar {
     display: flex;
     list-style: none;
     align-items: center;
@@ -48,7 +38,7 @@ ul.navBar {
 }
 
 /* Style the links inside the navigation bar */
-ul.navBar li a {
+.navBar li a {
     float: left;
     display: flex;
     text-align: center;
@@ -64,12 +54,12 @@ ul.navBar li a {
 
 /* Change the color of links on hover */
 /* not sure about how to create the underline I design on Figma D: */
-ul.navBar li a.active{
+.navBar li a.active{
     color:#6fe4b7;
     
 }
 
-ul.navBar li a:hover:not(.active){
+.navBar li a:hover:not(.active){
     color:#EAEAEA;
     scale: 105%;
 }
@@ -134,8 +124,6 @@ ul.navBar li a:hover:not(.active){
     background-color: #22857B;
 }
 
-
-
 .topButton span {
     cursor: pointer;
     display: inline-block;
@@ -143,7 +131,6 @@ ul.navBar li a:hover:not(.active){
     transition: 0.2s;
 
 }
-
 
 .topButton span:after {
     content: '\00bb';
@@ -163,7 +150,6 @@ ul.navBar li a:hover:not(.active){
     transition: 0.5s;
 }
 
-
 .BtnSignup:hover {
     background-color: #4c9c7e;
 }
@@ -172,23 +158,20 @@ ul.navBar li a:hover:not(.active){
     background-color: #4c9c7e;
 }
 
-
 .btmButton{
   margin-top: 10%;
 }
 
 /* header ends here*/
 
-
 form {
     border: 3px solid #22857B;
   }
   
   input[type=text], input[type=password] {
-    width: 600px;
-    height: 60px;
-    margin-top: 50px;
-    display: flex;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
     border-style: groove;
     border-radius: 10px;
     border-color: white;
@@ -197,19 +180,16 @@ form {
   }
 
   label {
-    margin-top: 20px;
+    margin-top: 15px;
     font-size: 20px;
     font-family: 'Jura', sans-serif;
     color: white;
   }
 
- 
-
-
   .container {
-    padding-left: 30%;
     margin-top: 10%;
     position: absolute;
+    left: 40%;  
     display: flex;
     flex-direction: column;
   }

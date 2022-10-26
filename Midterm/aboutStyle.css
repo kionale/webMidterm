@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
 
-*{
-    font-family: 'Jura', sans-serif;
-}
-
 body,
 html {
     height: 100%;
@@ -29,22 +25,12 @@ header{
 
 .logo{
     position:relative;
-    text-align: center;
     width:200px;
-    color:beige;
-    display:flex;
     margin-left: 40px;
     margin-top: 5px;
 }
 
-.logo p{
-    width: 100px;
-    margin-left: 10px;
-    font-size:20px;
-    font-family: 'Jura', sans-serif;
-}
-
-ul.navBar {
+.navBar {
     display: flex;
     list-style: none;
     align-items: center;
@@ -52,7 +38,7 @@ ul.navBar {
 }
 
 /* Style the links inside the navigation bar */
-ul.navBar li a {
+.navBar li a {
     float: left;
     display: flex;
     text-align: center;
@@ -68,12 +54,12 @@ ul.navBar li a {
 
 /* Change the color of links on hover */
 /* not sure about how to create the underline I design on Figma D: */
-ul.navBar li a.active{
+.navBar li a.active{
     color:#6fe4b7;
     
 }
 
-ul.navBar li a:hover:not(.active){
+.navBar li a:hover:not(.active){
     color:#EAEAEA;
     scale: 105%;
 }
@@ -255,6 +241,7 @@ form::placeholder{
 .contact-text{
     color:white;
     font-size: 16px;
+    font-family: 'Jura', sans-serif;
 }
 
 .sumbitBtn{
@@ -275,8 +262,14 @@ form::placeholder{
 
 /* footer */
 footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    overflow: hidden;
+    font-family: 'Jura', sans-serif;
     color: #D0D0D0;
 }
+
+.info {
+    margin-top: 50px;
+    position: relative;
+    left: 40%;
+}
+
