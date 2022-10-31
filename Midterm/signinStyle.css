@@ -25,22 +25,12 @@ header{
 
 .logo{
     position:relative;
-    text-align: center;
     width:200px;
-    color:beige;
-    display:flex;
     margin-left: 40px;
     margin-top: 5px;
 }
 
-.logo p{
-    width: 100px;
-    margin-left: 10px;
-    font-size:20px;
-    font-family: 'Jura', sans-serif;
-}
-
-ul.navBar {
+.navBar {
     display: flex;
     list-style: none;
     align-items: center;
@@ -48,7 +38,7 @@ ul.navBar {
 }
 
 /* Style the links inside the navigation bar */
-ul.navBar li a {
+.navBar li a {
     float: left;
     display: flex;
     text-align: center;
@@ -63,26 +53,30 @@ ul.navBar li a {
 }
 
 /* Change the color of links on hover */
-ul.navBar li a.active{
-    color:#EAEAEA;
-    /* not sure about how to create the underline I design on Figma D: */
+/* not sure about how to create the underline I design on Figma D: */
+.navBar li a.active{
+    color:#6fe4b7;
+    
 }
 
-ul.navBar li a:hover:not(.active){
+.navBar li a:hover:not(.active){
     color:#EAEAEA;
     scale: 105%;
 }
 
-.active .searchBox {
+.searchBox input {
     border-style: solid;
-    border: 2px;
+    background-color: #1E1E1E;
+    margin: 5px;
+    padding: 5px;
+    color: #D0D0D0;
     border-color: #D0D0D0;
     border-radius: 8px;
 }
 
 ::placeholder {
     font-family: 'Jura', sans-serif;
-    padding: 8px;
+    padding: 20px;
 }
 
 .topButton {
@@ -91,7 +85,7 @@ ul.navBar li a:hover:not(.active){
     display: flex;
 }
 
-.topBtnSignup {
+.BtnSignup {
     border-radius: 8px;
     border-color: #D0D0D0;
     border-style: solid;
@@ -110,7 +104,7 @@ ul.navBar li a:hover:not(.active){
     background-color: #2F2F2F;
 }
 
-.topBtnLogin {
+.BtnLogin {
     border-radius: 8px;
     border-color: #22857B;
     border-style: solid;
@@ -130,17 +124,24 @@ ul.navBar li a:hover:not(.active){
     background-color: #22857B;
 }
 
-
-
-/* .topBtn span {
+.topButton span {
     cursor: pointer;
     display: inline-block;
     position: relative;
-    transition: 0.5s;
+    transition: 0.2s;
 
 }
- */
-/* .topBtn span:after {
+
+.topButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.2s;
+}
+ 
+.topButton span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -148,44 +149,133 @@ ul.navBar li a:hover:not(.active){
     right: -20px;
     transition: 0.5s;
 }
-*/
 
-.topBtn:hover {
-    background-color: #b5c509;
+.BtnSignup:hover {
+    background-color: #4c9c7e;
 }
 
-.login{
-    background-color:#22857B;
-    color:#EAEAEA;
-}
- 
-
-/* header ends here*/
-
-.display{
-    width:100%;
-    height: 400px;
-    background-size: cover;
+.BtnLogin:hover{
+    background-color: #4c9c7e;
 }
 
-h2 {
-    font-family: 'Jura', sans-serif;
+.btmButton{
+  margin-top: 10%;
 }
 
-.about .contentBx{
-    width:50%;
-    margin:20%;
-
+*{
+    font-family: 'Jura';
 }
 
-.about .contentBx h2{
-    font-size:3em;
-    font-weight: 700;
-    color:#fff;
+.logInPage {
+    width: 50%;
+    border-radius: 10px;
 }
 
-.about .contentBx p{
-    max-width: 600px;
-    text-align: justify;
-    color:#dbd9b9;
+form {
+    background-color: #1E1E1E;
+    margin:1px;
 }
+
+.center {
+    padding: 70px 0;
+    text-align: center;
+}
+
+.white-box {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #1E1E1E;
+    color: white; 
+    margin:0;
+}
+
+h1 { 
+    color: #22857B;
+}
+
+input {
+    border: 0.8px;
+    border-color: white;
+    border-radius: 10px;
+}
+
+label {
+    text-align: left !important; 
+}
+
+input[type=text], input[type=password] {
+    width: 28%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    background: #f1f1f1;
+  }
+  
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+}
+  
+#message p {
+    padding: 10px 35px;
+    font-size: 18px;
+}
+  
+
+.valid {
+    color: green;
+}
+  
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10004;";
+}
+  
+
+.invalid {
+    color: red;
+}
+  
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10006;";
+}
+
+.a href{ 
+    color: dodgerblue;
+}
+
+  
+button {
+    background-color: #D0D0D0;
+    color: rgb(0, 0, 0);
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+  
+button:hover {
+    opacity:1;
+}
+  
+
+.signupbtn {
+    float: center;
+    width: 50%;
+    border-radius: 10px;
+}
+
