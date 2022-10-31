@@ -14,10 +14,9 @@
     <div class="navContainer">
         <header>
             <div class="logo">
-                <!-- display in italic-->
-                <i class="topLogo"></i>
-                <!-- <p>Game</p> -->
-                <img width="90" height="50" src="images/Logo.svg" alt="logo of the website">
+                <a href="#">
+                    <img alt="logo of the website" src="images/home/Logo.svg" width="90" height="50">
+                </a>
             </div>
             <ul class="navBar">
                 <li><a href="#" class="active">HOME</a></li>
@@ -28,41 +27,41 @@
                 <input type=text placeholder="search">
             </div>
 
-            <div class="topButton">
-                <button class="topBtnSignup">
+            <div class="topButton" onclick="window.location.href='signin.html'">
+                <button class="BtnSignup">
                     <span>SIGN UP</span>
                 </button>
-                <button class="topBtnLogin"><span>LOG IN</span></button>
+                <button class="BtnLogin" onclick="window.location.href='login.html'">
+                    <span>LOG IN</span>
+                </button>
             </div>
         </header>
     </div>
 
     <!-- contant starts here -->
-        <!--Main Page Slider-->
-        <div class="mainSlider">
-            <figure class="mainImgCollection">
-                <img class="mainImg" src="images/home/mainSlider/acval.jpg" alt="">
-                <img class="mainImg" src="images/home/mainSlider/granturismo7.jpg" alt="">
-                <img class="mainImg" src="images/home/mainSlider/codmw2.jpg" alt="">
-                <img class="mainImg" src="images/home/mainSlider/re4.webp" alt="">
-                <img class="mainImg" src="images/home/mainSlider/reddead2.jpg" alt="">
-                <img class="mainImg" src="images/home/mainSlider/re8.jpg" alt="">
-                <img class="mainImg" src="images/home/mainSlider/far-cry-6.jpeg" alt="">
-                <img class="mainImg" src="images/home/mainSlider/acval.jpg" alt="">
-            </figure>
-            <div class="excessImgCover">
+    <!--Main Page Slider-->
+    <div class="mainSlider">
+        <figure class="mainImgCollection">
+            <img class="mainImg" src="images/home/mainSlider/acval.jpg" alt="">
+            <img class="mainImg" src="images/home/mainSlider/granturismo7.jpg" alt="">
+            <img class="mainImg" src="images/home/mainSlider/codmw2.jpg" alt="">
+            <img class="mainImg" src="images/home/mainSlider/re4.webp" alt="">
+            <img class="mainImg" src="images/home/mainSlider/reddead2.jpg" alt="">
+            <img class="mainImg" src="images/home/mainSlider/re8.jpg" alt="">
+            <img class="mainImg" src="images/home/mainSlider/far-cry-6.jpeg" alt="">
+            <img class="mainImg" src="images/home/mainSlider/acval.jpg" alt="">
+        </figure>
+        <div class="excessImgCover"></div>
+    </div>
 
-            </div>
-        </div>
-
-        <!--featured games display and slider-->
+    <!--featured games display and slider-->
     <div class="featureGames">
         <div class="salePreviewTitle">Featured games</div>
         <div class="featureSlider">
             <div class="featureImgCollection">
                 <div class="slide">
                     <a class="featureImg" href="https://store.steampowered.com/agecheck/app/403640/">
-                        <img class="featureImg"src="images/home/featuredSlider/dishonored2.jpg" alt="">
+                        <img class="featureImg" src="images/home/featuredSlider/dishonored2.jpg" alt="">
                     </a>
                     <div class="gameName">Dishonored 2</div>
                 </div>
@@ -104,7 +103,7 @@
                 </div>
                 <div class="slide">
                     <a class="featureImg" href="https://store.steampowered.com/agecheck/app/403640/">
-                        <img class="featureImg"src="images/home/featuredSlider/dishonored2.jpg" alt="">
+                        <img class="featureImg" src="images/home/featuredSlider/dishonored2.jpg" alt="">
                     </a>
                     <div class="gameName">Dishonored 2</div>
                 </div>
@@ -143,7 +142,7 @@
                         <img class="featureImg" src="images/home/featuredSlider/ghostrunner.png" alt="">
                     </a>
                     <div class="gameName">Ghostrunner</div>
-                </div>  
+                </div>
             </div>
         </div>
     </div>

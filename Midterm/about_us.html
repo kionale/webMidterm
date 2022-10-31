@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="aboutStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Lexend+Deca&family=Montserrat&display=swap"
+        rel="aboutStyle">
+</head>
+
+<body>
+    <div class=" navContainer">
+        <header>
+            <div class="logo">
+                <a href="home.html">
+                    <img alt="logo of the website" src="images/home/Logo.svg" width="90" height="50">
+                </a>
+            </div>
+            <ul class="navBar">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="catalogue.html">CATALOGUE</a></li>
+                <li><a href="#" class="active">ABOUT US</a></li>
+            </ul>
+            <div class="searchBox">
+                <input type=text placeholder="search">
+            </div>
+
+            <div class="topButton">
+                <button class="BtnSignup" onclick="window.location.href='signin.html'">
+                    <span>SIGN UP</span>
+                </button>
+                <button class="BtnLogin" onclick="window.location.href='login.html'">
+                    <span>LOG IN</span>
+                </button>
+            </div>
+        </header>
+    </div>
+
+    <div class="main-content">
+        <div class="about-us-img">
+            <img src="images/about-us/img2.webp" alt="">
+        </div>
+        <div class="contact">
+            <img src="" alt="">
+            <div class="form">
+                <h1>Contact Us</h1>
+                <form action="" method="post"></form>
+                <div class="inputBx">
+                    <label class="contact-text" for="fullName">Name:</label>
+                    <input class="infoInput" id="fullName" type="text" required placeholder="Full Name">
+                    <label class="contact-text" for="email">Email:</label>
+                    <input class="infoInput" id="email" type="text" required placeholder="Email">
+                    <label class="contact-text" for="concern">Your Concern:</label>
+                    <input class="concernInput" id="concern" type="text" required placeholder="How can we help you?">
+                </div>
+                <button class="sumbitBtn" type="submit">Submit</button>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</body>
+<!-- Footer -->
+<footer>
+    <div class="info">
+        <p><i class='bx bx-copyright'></i>2022 All Rights Reserved</p>
+    </div>
+</footer>
+
+</html>

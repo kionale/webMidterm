@@ -25,22 +25,12 @@ header{
 
 .logo{
     position:relative;
-    text-align: center;
     width:200px;
-    color:beige;
-    display:flex;
     margin-left: 40px;
     margin-top: 5px;
 }
 
-.logo p{
-    width: 100px;
-    margin-left: 10px;
-    font-size:20px;
-    font-family: 'Jura', sans-serif;
-}
-
-ul.navBar {
+.navBar {
     display: flex;
     list-style: none;
     align-items: center;
@@ -48,7 +38,7 @@ ul.navBar {
 }
 
 /* Style the links inside the navigation bar */
-ul.navBar li a {
+.navBar li a {
     float: left;
     display: flex;
     text-align: center;
@@ -63,12 +53,13 @@ ul.navBar li a {
 }
 
 /* Change the color of links on hover */
-ul.navBar li a.active{
-    color:#EAEAEA;
-    /* not sure about how to create the underline I design on Figma D: */
+/* not sure about how to create the underline I design on Figma D: */
+.navBar li a.active{
+    color:#6fe4b7;
+    
 }
 
-ul.navBar li a:hover:not(.active){
+.navBar li a:hover:not(.active){
     color:#EAEAEA;
     scale: 105%;
 }
@@ -94,7 +85,7 @@ ul.navBar li a:hover:not(.active){
     display: flex;
 }
 
-.topBtnSignup {
+.BtnSignup {
     border-radius: 8px;
     border-color: #D0D0D0;
     border-style: solid;
@@ -113,7 +104,7 @@ ul.navBar li a:hover:not(.active){
     background-color: #2F2F2F;
 }
 
-.topBtnLogin {
+.BtnLogin {
     border-radius: 8px;
     border-color: #22857B;
     border-style: solid;
@@ -133,17 +124,24 @@ ul.navBar li a:hover:not(.active){
     background-color: #22857B;
 }
 
-
-
-/* .topBtn span {
+.topButton span {
     cursor: pointer;
     display: inline-block;
     position: relative;
-    transition: 0.5s;
+    transition: 0.2s;
 
 }
- */
-/* .topBtn span:after {
+
+.topButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.2s;
+}
+ 
+.topButton span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -151,19 +149,16 @@ ul.navBar li a:hover:not(.active){
     right: -20px;
     transition: 0.5s;
 }
-*/
 
-.topBtn:hover {
-    background-color: #b5c509;
+.BtnSignup:hover {
+    background-color: #4c9c7e;
 }
 
-.login{
-    background-color:#22857B;
-    color:#EAEAEA;
+.BtnLogin:hover{
+    background-color: #4c9c7e;
 }
- 
 
-/* header ends here*/
+/* navbar ends here*/
 
 .display{
     width:100%;
@@ -175,19 +170,14 @@ h2 {
     font-family: 'Jura', sans-serif;
 }
 
-.gameName {
-    font-family: 'Jura', sans-serif;
-    padding: 5px;
-    font-size: 16px;
-    color: #EAEAEA;
-}
-
 img {
     object-fit: cover;
 }
 
-.featureGames{
-    position: relative;
+/* Image Sliders */
+
+.gamesBox{
+    padding:0px;
     width:100%;
 }
 
@@ -198,66 +188,19 @@ img {
     font-family: 'Jura', sans-serif;
     color: #EAEAEA;
     padding: 20px;
+    padding-left: 40px;
 }
 
-/* main slider style */
-
-.mainSlider {
-    display: grid;
-    overflow: hidden;
-    margin: 10px;
-    position: relative;
-    left: 15%;
-    width: 84%;
-}
-
-.mainImgCollection {
-    position: relative;
-    display: flex;
+.gameName {
     align-items: center;
-    width: calc(80% * 8);
-    margin: 0;
-    left: 0%;
-    animation: 40s mainScroll infinite;
+    justify-content: center;
+    font-family: 'Jura', sans-serif;
+    padding: 5px;
+    font-size: 16px;
+    color: #EAEAEA;
 }
 
-.mainImg {
-    width: calc(100% / 8);
-    float: left;
-    object-fit: cover;
-}
-
-.mainSlider::before,
-.mainSlider::after {
-    background: linear-gradient(to right, rgba(29,29,29,1) 0%, rgba(255,255,255,0) 100%);
-    content: '';
-    height: 100%;
-    position: absolute;
-    width: 8%;
-    z-index: 1;
-}
-
-.mainSlider::before {
-    left: 0%;
-    top: 0%;
-}
-
-.mainSlider::after {
-    right: 20%;
-    top: 0%;
-    transform: rotateZ(180deg);
-}
-
-.excessImgCover {
-    background-color: #1E1E1E;
-    width: 20%;
-    height: 100%;
-    position: absolute;
-    right: 0;
-}
-
-/* feature slider style */
-.featureSlider {
+.gameSlider {
     height: 100%;
     margin: auto;
     position: relative;
@@ -266,9 +209,9 @@ img {
     overflow: hidden;
 }
 
-.featureImgCollection {
+.imgCollection {
     display: flex;
-    width: calc(25% * 10);
+    width: calc(25% * 14);
     animation: featureScroll 40s linear infinite;
 }
 
@@ -280,13 +223,14 @@ img {
     perspective: 100px;
 }
 
-.featureImg {
-    width: 98%;
+.slideImg {
+    width: 90%;
     transition: transform 0.5s;
+    border-radius: 5px;
 }
 
-.featureSlider::before,
-.featureSlider::after {
+.gameSlider::before,
+.gameSlider::after {
     background: linear-gradient(to right, rgba(29,29,29,1) 0%, rgba(255,255,255,0) 100%);
     content: '';
     height: 100%;
@@ -295,12 +239,12 @@ img {
     z-index: 2;
 }
 
-.featureSlider::before {
+.gameSlider::before {
     left: 0%;
     top: 0%;
 }
 
-.featureSlider::after {
+.gameSlider::after {
     right: 0%;
     top: 0%;
     transform: rotateZ(180deg);
@@ -308,66 +252,17 @@ img {
 
 /* feature image hover effect */
 
-.featureImg:hover {
+.slideImg:hover {
     transform: translateZ(10px);
 }
 
-@keyframes mainScroll {
+
+/* animations */
+@keyframes featureScroll {
     0% {
-        left: 0;
-    }
-    6% {
-        left: 0;
-    }
-    10% {
-        left: -80%;
-    }
-    20%{
-        left: -80%;
-    }
-    24% {
-        left: -160%;
-    }
-    34%{
-        left: -160%;
-    }
-    38% {
-        left: -240%;
-    }
-    48% {
-        left: -240%;
-    }
-    52% {
-        left: -320%;
-    }
-    62% {
-        left: -320%;
-    }
-    66% {
-        left: -400%;
-    }
-    76% {
-        left: -400%;
-    }
-    80% {
-        left: -480%;
-    }
-    90% {
-        left: -480%;
-    }
-    94% {
-        left: -560%;
+        transform: translateX(0);
     }
     100% {
-        left: -560%;
+        transform: translateX(-50%);
     }
 }
-
-    @keyframes featureScroll {
-        0% {
-            transform: translateX(0);
-        }
-        100% {
-            transform: translateX(-40%);
-        }
-    }
