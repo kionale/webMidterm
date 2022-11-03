@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
 
+*{
+    font-family: 'Jura';
+}
+
 body,
 html {
     height: 100%;
@@ -53,13 +57,7 @@ header{
 }
 
 /* Change the color of links on hover */
-/* not sure about how to create the underline I design on Figma D: */
-.navBar li a.active{
-    color:#6fe4b7;
-    
-}
-
-.navBar li a:hover:not(.active){
+.navBar li a:hover{
     color:#EAEAEA;
     scale: 105%;
 }
@@ -162,18 +160,11 @@ header{
   margin-top: 10%;
 }
 
-*{
-    font-family: 'Jura';
-}
+/* Navigation bar ends here */
 
 .logInPage {
     width: 50%;
     border-radius: 10px;
-}
-
-form {
-    background-color: #1E1E1E;
-    margin:1px;
 }
 
 .center {

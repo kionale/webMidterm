@@ -11,18 +11,21 @@
 <body>
     <div class="navContainer">
         <header>
+            <!-- Logo -->
             <div class="logo">
                 <a href="home.html">
                     <img alt="logo of the website" src="images/home/Logo.svg" width="90" height="50">
                 </a>
             </div>
+
+            <!-- navBar page links -->
             <ul class="navBar">
                 <li><a href="home.html">HOME</a></li>
                 <li><a href="catalogue.html">CATALOGUE</a></li>
-                <li><a href="#" class="active">ABOUT US</a></li>
+                <li><a href="about_us.html">ABOUT US</a></li>
             </ul>
 
-
+            <!-- Login and Signup buttons -->
             <div class="topButton">
                 <button class="BtnSignup" onclick="window.location.href='signin.html'">
                     <span>SIGN UP</span>
@@ -33,7 +36,7 @@
             </div>
         </header>
     </div>
-    <form action="/action_page.php">
+    <form action="action_page.php">
         <div class="container">
             <div class="center">
                 <div class="white-box">
@@ -64,13 +67,13 @@
                             <input type="password" placeholder="Enter Password" name="psw" size="15" maxlength="14" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
                             <br>     
                                 <!-- Message -->
-                                    <div id="message">
-                                        <h3>Password must contain the following:</h3>
-                                            <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
-                                            <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
-                                            <p id="number" class="invalid">A <b>number</b></p>
-                                            <p id="length" class="invalid">Minimum <b>8 characters</b></p>
-                                    </div>
+                                <div id="message">
+                                    <h3>Password must contain the following:</h3>
+                                        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                                        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                                        <p id="number" class="invalid">A <b>number</b></p>
+                                        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                                </div>
                                     
                         <!-- Confirm password -->
                             <label for="psw-repeat"><b>Confirm password</b></label>
