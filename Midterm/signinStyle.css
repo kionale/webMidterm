@@ -190,8 +190,19 @@ form {
     margin:0;
 }
 
-h1 { 
-    color: #22857B;
+.title{
+    color: #4c9c7e;
+
+}
+
+.title::before{
+    top:0;
+    transform-origin: center right;
+}
+
+.title:hover::before{
+    transform-origin: center left;
+    transform:scaleX(1);
 }
 
 input {
@@ -259,7 +270,7 @@ input[type=text]:focus, input[type=password]:focus {
 
   
 button {
-    background-color: #D0D0D0;
+    background-color: #22857B;
     color: rgb(0, 0, 0);
     padding: 14px 20px;
     border: none;

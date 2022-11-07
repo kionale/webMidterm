@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
 
+*{
+    font-family: 'Jura';
+    color:white;
+}
+
 body,
 html {
     height: 100%;
@@ -166,11 +171,88 @@ header{
     background-size: cover;
 }
 
-h1 {
-    font-family: 'Jura', sans-serif;
-    color:White;
+.wesite-name:hover {
+    background-color: #4c9c7e;
 }
 
+
+.introduction{
+    
+}
+
+.title{
+    font-family: 'Jura', sans-serif;
+    color: #4c9c7e;
+    position:relative;
+    cursor:pointer;
+    height:50px;
+    width: auto;
+
+}
+
+.main-content{
+    display: flex;
+}
+
+.left-section{
+    margin-left: 5%;
+}
+
+.website-logo{
+    margin-top:10%;
+   
+}
+.left-section{
+    display: grid;
+    grid-template:
+    "website-logo wesite-name " 
+    "introduction . ."
+    "website-status . ."
+    "action .";
+    grid-gap: 30px;
+
+}
+.about-us-body{
+    display:flex;
+}
+
+.website-status{
+    display: flex;
+}
+
+.install-btn {
+    border-radius: 8px;
+    border-color: #22857B;
+    border-style: solid;
+    border-width: 2px;
+    font-family: 'Jura', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #D0D0D0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-color: #22857B;
+    background-color: #22857B;
+}
+
+.install-btn:hover {
+    background-color: #4c9c7e;
+}
+
+.install{
+    display:flex;
+}
+
+.store-icon{
+    display: flex;
+    width: 50px;
+    height:50px;
+}
 .about-us-img img {
     width: 100%;
 }
@@ -267,9 +349,27 @@ footer{
     color: #D0D0D0;
 }
 
+.footer-body{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer-logo{
+    display: flex;
+    margin-top: 20%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+}
 .info {
     margin-top: 50px;
-    position: relative;
-    left: 40%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
 }
 
