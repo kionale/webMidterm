@@ -192,6 +192,9 @@ header{
 .main-content{
     display: flex;
 }
+.intro{
+    margin-top: 10%;
+}
 
 .left-section{
     margin-left: 5%;
@@ -201,7 +204,7 @@ header{
     margin-top:10%;
    
 }
-.left-section{
+/* .left-section{
     display: grid;
     grid-template:
     "website-logo wesite-name " 
@@ -210,19 +213,25 @@ header{
     "action .";
     grid-gap: 30px;
 
-}
+} */
 .about-us-body{
     display:flex;
 }
 
 .website-status{
     display: flex;
+    margin-top: 10%;
 }
 
 .status-number{
     color:#22857B;
 
 }
+
+.action{
+    display: flex;
+}
+
 .install-btn {
     border-radius: 8px;
     border-color: #22857B;
@@ -241,6 +250,7 @@ header{
     cursor: pointer;
     border-color: #22857B;
     background-color: #22857B;
+    margin-top: 3%;
 }
 
 .install-btn:hover {
@@ -337,10 +347,11 @@ form::placeholder{
 .contact-text{
     color:white;
     font-size: 16px;
+    margin-top: 5%;
 }
 
 .sumbitBtn{
-    margin-top: 3%;
+    margin-top: 10%;
     font-size: 18px;
     border-radius: 8px;
     border-color: #22857B;
@@ -362,6 +373,12 @@ form::placeholder{
 
 .sumbitBtn:hover {
     background-color: #4c9c7e;
+}
+
+.community{
+    margin-top: 5%;
+    margin-right: 5%;
+    
 }
 
 .community-btn{
@@ -421,13 +438,3 @@ footer{
     
 }
 
-@media only screen and (max-width : 600px){
-    .main-content{
-        display:grid;
-        grid-template:
-        "website-logo wesite-name about-us-img " 50px
-        "introduction . about-us-img" 50px
-        "website-status . about-us-img" 50px
-        "action . about-us-img" 50px;
-    }
-}
