@@ -364,6 +364,31 @@ form::placeholder{
     background-color: #4c9c7e;
 }
 
+.community-btn{
+    margin-top: 3%;
+    font-size: 18px;
+    border-radius: 8px;
+    border-color: #22857B;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #D0D0D0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-color: #22857B;
+    background-color: #22857B;
+}
+
+.community-btn:hover {
+    background-color: #4c9c7e;
+}
+
 
 /* footer */
 footer{
