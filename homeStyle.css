@@ -239,7 +239,7 @@ img {
 }
 
 .mainSlider::after {
-    right: 20%;
+    right: 19.5%;
     top: 0%;
     transform: rotateZ(180deg);
 }
@@ -301,7 +301,7 @@ img {
 }
 
 .featureSlider::after {
-    right: 0%;
+    right: -0.5%;
     top: 0%;
     transform: rotateZ(180deg);
 }

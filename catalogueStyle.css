@@ -246,7 +246,7 @@ img {
 }
 
 .gameSlider::after {
-    right: 0%;
+    right: -0.5%;
     top: 0%;
     transform: rotateZ(180deg);
 }
