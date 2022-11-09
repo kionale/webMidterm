@@ -33,6 +33,7 @@ header{
     width:200px;
     margin-left: 40px;
     margin-top: 5px;
+    display: flex;
 }
 
 .navBar {
@@ -191,6 +192,8 @@ header{
 
 .main-content{
     display: flex;
+   /*  flex-wrap:wrap;
+    flex-direction: row; */
 }
 .intro{
     margin-top: 10%;
@@ -265,6 +268,10 @@ header{
     display: flex;
     width: 50px;
     height:50px;
+}
+
+.store-icon:hover{
+    background-color: #4c9c7e;
 }
 .about-us-img img {
     width: 100%;
