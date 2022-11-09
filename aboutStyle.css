@@ -170,8 +170,13 @@ header{
     background-size: cover;
 }
 
-.wesite-name:hover {
+.website-name {
+    padding: 10px;
+}
+
+.website-name:hover {
     background-color: #4c9c7e;
+    border-radius: 10px;
 }
 
 .title{
@@ -202,7 +207,7 @@ header{
 .left-section{
     display: grid;
     grid-template:
-    "website-logo wesite-name " 
+    "website-logo website-name " 
     "introduction . ."
     "website-status . ."
     "action .";
@@ -270,6 +275,7 @@ header{
 }
 .about-us-img img {
     width: 100%;
+    border-radius: 10px;
 }
 
 .description{
@@ -287,7 +293,7 @@ header{
 .about-us-img{
    margin-top: 10%;
    margin-left: 10%;
-   margin-right:5%;
+   margin-right: 5%;
 }
 
 /*contact section start here*/
@@ -298,9 +304,8 @@ header{
 }
 
 .form{
-    margin-left: 5%;
-    margin-right: 10%;
-    margin-top: 5%;
+    margin-top: 50px;
+    margin-left: 60px;
     width:100%;
     min-height: 50vh;
     justify-content: center;
@@ -373,8 +378,14 @@ form::placeholder{
 }
 
 .community{
-    margin-top: 5%;
-    margin-right: 5%;
+    margin-top: 40px;
+    padding-right: 80px;
+}
+
+.community a img{
+    width:  100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .community-btn{
