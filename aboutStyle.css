@@ -220,7 +220,7 @@ header{
 
 .website-status{
     display: flex;
-    margin-top: 10%;
+    margin-top: 3%;
 }
 
 .status-number{
@@ -250,7 +250,7 @@ header{
     cursor: pointer;
     border-color: #22857B;
     background-color: #22857B;
-    margin-top: 3%;
+    margin-top: 1%;
 }
 
 .install-btn:hover {
@@ -277,6 +277,7 @@ header{
 .about-us-img img {
     width: 100%;
     border-radius: 10px;
+    margin-top: 20%;
 }
 
 .description{
@@ -381,6 +382,10 @@ form::placeholder{
 .community{
     margin-top: 40px;
     padding-right: 80px;
+}
+
+.community-title{
+    color:#22857B;
 }
 
 .community a img{
