@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>Log In</title>
     <link rel="stylesheet" href="loginStyle.css">
     <link rel="stylesheet" href="aboutStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,18 +18,21 @@
 <body>
     <div class="navContainer">
         <header>
+            <!-- Logo -->
             <div class="logo">
                 <a href="home.html">
                     <img alt="logo of the website" src="images/home/Logo.svg" width="90" height="50">
                 </a>
             </div>
+
+            <!-- navBar page links -->
             <ul class="navBar">
                 <li><a href="home.html">HOME</a></li>
                 <li><a href="catalogue.html">CATALOGUE</a></li>
                 <li><a href="about_us.html">ABOUT US</a></li>
             </ul>
 
-
+            <!-- Login and Signup buttons -->
             <div class="topButton">
                 <button class="BtnSignup" onclick="window.location.href='signin.html'">
                     <span>SIGN UP</span>
@@ -40,6 +43,8 @@
             </div>
         </header>
     </div>
+
+    <!-- Login page and form -->
     <form action="action_page.php" method="post">
         <div class="container">
             <label for="uname"><b>Log in with Username</b></label>
@@ -49,14 +54,11 @@
             <input type="password" placeholder="Enter Password" name="psw" required maxlength="20">
 
             <div class="btmButton">
-                <button class="BtnSignup">
-                    <sapn>SIGN UP</sapn>
-                </button>
-                <button class="BtnLogin">
+                <button class="BtnLoginPage">
                     <span>LOG IN</span>
                 </button>
             </div>
-
+            
             <label>
                 <input type="checkbox" checked="checked" name="remember"> Remember me
             </label>

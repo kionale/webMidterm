@@ -53,13 +53,7 @@ header{
 }
 
 /* Change the color of links on hover */
-/* not sure about how to create the underline I design on Figma D: */
-.navBar li a.active{
-    color:#6fe4b7;
-    
-}
-
-.navBar li a:hover:not(.active){
+.navBar li a:hover{
     color:#EAEAEA;
     scale: 105%;
 }
@@ -162,131 +156,75 @@ header{
   margin-top: 10%;
 }
 
-*{
-    font-family: 'Jura';
-}
-
-.logInPage {
-    width: 50%;
+/* Navigation bar ends here*/
+  
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    border-style: groove;
     border-radius: 10px;
-}
-
-form {
-    background-color: #1E1E1E;
-    margin:1px;
-}
-
-.center {
-    padding: 70px 0;
-    text-align: center;
-}
-
-.white-box {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    background-color: #1E1E1E;
-    color: white; 
-    margin:0;
-}
-
-.title{
-    color: #4c9c7e;
-
-}
-
-.title::before{
-    top:0;
-    transform-origin: center right;
-}
-
-.title:hover::before{
-    transform-origin: center left;
-    transform:scaleX(1);
-}
-
-input {
-    border: 0.8px;
     border-color: white;
-    border-radius: 10px;
+    background-color: #2f2f2f;
+    color: white;
 }
 
 label {
-    text-align: left !important; 
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: 'Jura', sans-serif;
+    color: white;
 }
 
-input[type=text], input[type=password] {
-    width: 28%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    background: #f1f1f1;
-  }
+.container {
+    margin-top: 10%;
+    position: absolute;
+    left: 40%;  
+    display: flex;
+    flex-direction: column;
+}
   
-input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
+span.psw {
+    position: absolute;
+    display: flex;
+    margin-top: 450px;
+    margin-left: 510px; 
+    color: white;
 }
 
-#message {
-    display:none;
-    background: #f1f1f1;
-    color: #000;
-    position: relative;
-    padding: 20px;
-    margin-top: 10px;
-}
-  
-#message p {
-    padding: 10px 35px;
-    font-size: 18px;
-}
-  
-
-.valid {
-    color: green;
-}
-  
-.valid:before {
-    position: relative;
-    left: -35px;
-    content: "&#10004;";
-}
-  
-
-.invalid {
-    color: red;
-}
-  
-.invalid:before {
-    position: relative;
-    left: -35px;
-    content: "&#10006;";
-}
-
-.a href{ 
-    color: dodgerblue;
-}
-
-  
-button {
-    background-color: #22857B;
-    color: rgb(0, 0, 0);
-    padding: 14px 20px;
-    border: none;
+.BtnLoginPage {
+    width: 115%;
+    border-radius: 8px;
+    border-color: #22857B;
+    border-style: solid;
+    border-width: 2px;
+    font-family: 'Jura', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #D0D0D0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    transition: all 0.5s;
     cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-}
-  
-button:hover {
-    opacity:1;
-}
-  
-
-.signupbtn {
-    float: center;
-    width: 50%;
-    border-radius: 10px;
+    border-color: #22857B;
+    background-color: #22857B;
 }
 
+.BtnLoginPage:hover{
+    background-color: #4c9c7e;
+}
+
+a {
+    color: #22857B;
+}
+  
+@media screen and (max-width: 30px) {
+    span.psw {
+      display: flex;
+      padding-left: 40%;
+    
+    }
+}

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
 
+*{
+    font-family: 'Jura';
+}
+
 body,
 html {
     height: 100%;
@@ -53,13 +57,7 @@ header{
 }
 
 /* Change the color of links on hover */
-/* not sure about how to create the underline I design on Figma D: */
-.navBar li a.active{
-    color:#6fe4b7;
-    
-}
-
-.navBar li a:hover:not(.active){
+.navBar li a:hover{
     color:#EAEAEA;
     scale: 105%;
 }
@@ -158,111 +156,128 @@ header{
     background-color: #4c9c7e;
 }
 
-/* navbar ends here*/
-
-.display{
-    width:100%;
-    height: 400px;
-    background-size: cover;
+.btmButton{
+  margin-top: 10%;
 }
 
-h2 {
-    font-family: 'Jura', sans-serif;
+/* Navigation bar ends here */
+
+.logInPage {
+    width: 50%;
+    border-radius: 10px;
 }
 
-img {
-    object-fit: cover;
+.center {
+    padding: 70px 0;
+    text-align: center;
 }
 
-/* Image Sliders */
-
-.gamesBox{
-    padding:0px;
-    width:100%;
-}
-
-.salePreviewTitle{
-    background-color: #474747;
-    font-size: 24px;
-    font-weight: 900;
-    font-family: 'Jura', sans-serif;
-    color: #EAEAEA;
-    padding: 20px;
-    padding-left: 40px;
-}
-
-.gameName {
-    align-items: center;
+.white-box {
+    display: flex;
+    align-content: center;
     justify-content: center;
-    font-family: 'Jura', sans-serif;
-    padding: 5px;
-    font-size: 16px;
-    color: #EAEAEA;
+    background-color: #1E1E1E;
+    color: white; 
+    margin:0;
 }
 
-.gameSlider {
-    height: 100%;
-    margin: auto;
-    position: relative;
-    width: 90%;
-    display: grid;
-    overflow: hidden;
+.title{
+    color: #4c9c7e;
+
 }
 
-.imgCollection {
-    display: flex;
-    width: calc(25% * 14);
-    animation: featureScroll 40s linear infinite;
+.title::before{
+    top:0;
+    transform-origin: center right;
 }
 
-.slide {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.title:hover::before{
+    transform-origin: center left;
+    transform:scaleX(1);
+}
+
+input {
+    border: 0.8px;
+    border-color: white;
+    border-radius: 10px;
+}
+
+label {
+    text-align: left !important; 
+}
+
+input[type=text], input[type=password] {
+    width: 28%;
     padding: 15px;
-    perspective: 100px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    background: #f1f1f1;
+  }
+  
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
 }
 
-.slideImg {
-    width: 90%;
-    transition: transform 0.5s;
-    border-radius: 5px;
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+}
+  
+#message p {
+    padding: 10px 35px;
+    font-size: 18px;
+}
+  
+
+.valid {
+    color: green;
+}
+  
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10004;";
+}
+  
+
+.invalid {
+    color: red;
+}
+  
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10006;";
 }
 
-.gameSlider::before,
-.gameSlider::after {
-    background: linear-gradient(to right, rgba(29,29,29,1) 0%, rgba(255,255,255,0) 100%);
-    content: '';
-    height: 100%;
-    position: absolute;
-    width: 8%;
-    z-index: 2;
+.a href{ 
+    color: dodgerblue;
 }
 
-.gameSlider::before {
-    left: 0%;
-    top: 0%;
+  
+button {
+    background-color: #22857B;
+    color: rgb(0, 0, 0);
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+  
+button:hover {
+    opacity:1;
+}
+  
+
+.signupbtn {
+    float: center;
+    width: 50%;
+    border-radius: 10px;
 }
 
-.gameSlider::after {
-    right: 0%;
-    top: 0%;
-    transform: rotateZ(180deg);
-}
-
-/* feature image hover effect */
-
-.slideImg:hover {
-    transform: translateZ(10px);
-}
-
-
-/* animations */
-@keyframes featureScroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
