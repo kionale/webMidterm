@@ -379,7 +379,6 @@ form::placeholder{
 }
 
 .community{
-<<<<<<< HEAD:aboutStyle.css
     margin-top: 40px;
     padding-right: 80px;
 }
@@ -388,11 +387,6 @@ form::placeholder{
     width:  100%;
     height: auto;
     border-radius: 10px;
-=======
-    margin-top: 5%;
-    margin-right: 5%;
-    
->>>>>>> main:Midterm/aboutStyle.css
 }
 
 .community-btn{
