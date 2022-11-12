@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,24 +45,25 @@
                         <h1>Sign Up</h1>
 
                         <!-- Name -->
-                            <label for="name"><b>Name</b></label>
-                            <br>
-                            <input type="text" placeholder="Name" name="name" >
-                            <br>
-        
+                        <label for="name"><b>Name</b></label>
+                        <br>
+                        <input type="text" placeholder="Name" name="name">
+                        <br>
+
                         <!-- Email -->
-                            <label for="email"><b>Email</b></label>
-                            <br>
-                            <input type="text" placeholder="Enter Email" name="email" required>
-                            <br> 
+                        <label for="email"><b>Email</b></label>
+                        <br>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+                        <br>
 
                         <!-- Username -->
-                            <label for="username"><b>Username</b></label>
-                            <br>
-                            <input type="text" placeholder="Username" name="username" size="15" maxlength="15">
-                            <br>
-                            
+                        <label for="username"><b>Username</b></label>
+                        <br>
+                        <input type="text" placeholder="Username" name="username" size="15" maxlength="15">
+                        <br>
+
                         <!-- Password -->
+<<<<<<< HEAD:signin.html
                             <label for="psw"><b>Password</b></label>
                             <br>
                             <input type="password" placeholder="Enter Password" name="psw" size="15" maxlength="14" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
@@ -75,31 +77,53 @@
                                         <p id="length" class="invalid">Minimum <b>8 characters</b></p>
                                 </div>
                                     
+=======
+                        <label for="psw"><b>Password</b></label>
+                        <br>
+                        <input type="password" placeholder="Enter Password" name="psw" size="15" maxlength="14"
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                            required>
+                        <br>
+                        <!-- Message -->
+                        <div id="message">
+                            <h3>Password must contain the following:</h3>
+                            <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                            <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                            <p id="number" class="invalid">A <b>number</b></p>
+                            <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                        </div>
+
+>>>>>>> main:Midterm/signin.html
                         <!-- Confirm password -->
-                            <label for="psw-repeat"><b>Confirm password</b></label>
-                            <br>
-                            <input type="password" placeholder="Repeat Password" name="psw-repeat" size="15" maxlength="14" required>
-                            <br>
-                            <label>
-                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-                            </label>
-                        
+                        <label for="psw-repeat"><b>Confirm password</b></label>
+                        <br>
+                        <input type="password" placeholder="Repeat Password" name="psw-repeat" size="15" maxlength="14"
+                            required>
+                        <br>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+                            Remember me
+                        </label>
+
                         <!-- Checkbox -->
-                            <label>
-                            <input type="checkbox" checked="checked" name="update" style="margin-bottom:15px"> Send emails on new games and updates on ongoing games
-                            </label>
+                        <label>
+                            <input type="checkbox" checked="checked" name="update" style="margin-bottom:15px"> Send
+                            emails on new games and updates on ongoing games
+                        </label>
 
                         <!-- Terms and Conditions  -->
-                            <p>By creating an account you agree to our <a href="#" >Terms & Privacy</a></p>
-                            
-                        <!-- Buttons: Back to login & Signup--> 
-                            <div class="buttons">
-                                <button type="submit" class="signupbtn">Sign Up</button>
-                            </div>
-                    
-                </div> 
+                        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a></p>
+
+                        <!-- Buttons: Back to login & Signup-->
+                        <div class="buttons">
+                            <button type="submit" class="signupbtn">Sign Up</button>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-        </div>
     </form>
 </body>
+
 </html>

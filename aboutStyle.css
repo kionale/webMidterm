@@ -33,6 +33,7 @@ header{
     width:200px;
     margin-left: 40px;
     margin-top: 5px;
+    display: flex;
 }
 
 .navBar {
@@ -170,6 +171,7 @@ header{
     background-size: cover;
 }
 
+<<<<<<< HEAD:aboutStyle.css
 .website-name {
     padding: 10px;
 }
@@ -177,6 +179,15 @@ header{
 .website-name:hover {
     background-color: #4c9c7e;
     border-radius: 10px;
+=======
+.wesite-name:hover {
+    background-color: #4c9c7e;
+}
+
+
+.introduction{
+    
+>>>>>>> main:Midterm/aboutStyle.css
 }
 
 .title{
@@ -190,6 +201,11 @@ header{
 
 .main-content{
     display: flex;
+<<<<<<< HEAD:aboutStyle.css
+=======
+   /*  flex-wrap:wrap;
+    flex-direction: row; */
+>>>>>>> main:Midterm/aboutStyle.css
 }
 .intro{
     margin-top: 10%;
@@ -203,16 +219,28 @@ header{
     margin-top:10%;
    
 }
+<<<<<<< HEAD:aboutStyle.css
 
 .left-section{
     display: grid;
     grid-template:
     "website-logo website-name " 
+=======
+/* .left-section{
+    display: grid;
+    grid-template:
+    "website-logo wesite-name " 
+>>>>>>> main:Midterm/aboutStyle.css
     "introduction . ."
     "website-status . ."
     "action .";
     grid-gap: 30px;
+<<<<<<< HEAD:aboutStyle.css
 }
+=======
+
+} */
+>>>>>>> main:Midterm/aboutStyle.css
 .about-us-body{
     display:flex;
 }
@@ -266,10 +294,13 @@ header{
     height:50px;
 }
 
+<<<<<<< HEAD:aboutStyle.css
 .store-icon a .microLogo {
     border-radius: 10px;
 }
 
+=======
+>>>>>>> main:Midterm/aboutStyle.css
 .store-icon:hover{
     background-color: #4c9c7e;
 }
@@ -293,9 +324,18 @@ header{
 .about-us-img{
    margin-top: 10%;
    margin-left: 10%;
+<<<<<<< HEAD:aboutStyle.css
    margin-right: 5%;
 }
 
+=======
+   margin-right:5%;
+
+}
+
+
+
+>>>>>>> main:Midterm/aboutStyle.css
 /*contact section start here*/
 
 .contact{
@@ -304,8 +344,15 @@ header{
 }
 
 .form{
+<<<<<<< HEAD:aboutStyle.css
     margin-top: 50px;
     margin-left: 60px;
+=======
+    /* padding:20px 100px; */
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-top: 5%;
+>>>>>>> main:Midterm/aboutStyle.css
     width:100%;
     min-height: 50vh;
     justify-content: center;
@@ -378,6 +425,7 @@ form::placeholder{
 }
 
 .community{
+<<<<<<< HEAD:aboutStyle.css
     margin-top: 40px;
     padding-right: 80px;
 }
@@ -386,6 +434,11 @@ form::placeholder{
     width:  100%;
     height: auto;
     border-radius: 10px;
+=======
+    margin-top: 5%;
+    margin-right: 5%;
+    
+>>>>>>> main:Midterm/aboutStyle.css
 }
 
 .community-btn{
@@ -425,6 +478,28 @@ footer{
     text-align: center;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD:aboutStyle.css
+=======
+
+}
+
+.footer-logo{
+    display: flex;
+    margin-top: 20%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.info {
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+>>>>>>> main:Midterm/aboutStyle.css
 }
 
 .footer-logo{
